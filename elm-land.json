@@ -20,7 +20,7 @@
       "script": []
     },
     "router": {
-      "useHashRouting": false
+      "useHashRouting": true
     }
   }
 }
