@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - run: npm install && npm run build && sed -i 's#/assets/#./assets/#g' dist/index.html && mv dist _site
+      - run: yarn install && yarn build && sed -i 's#/assets/#./assets/#g' dist/index.html && mv dist _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
