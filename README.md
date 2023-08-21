@@ -20,7 +20,7 @@ To use this project, follow these steps:
 
 ## Configuration
 
-The trick to using Tailwind with Elm-land is to configure Tailwind to look for changes in files in addition to the usual src location, also to look for them in .elm-land directory. This is done in the `tailwind.config.js` file:
+The trick to using Tailwind with Elm-land is to configure Tailwind to look for changes in files in addition to the usual src location and look for them in the .elm-land directory. This is done in the `tailwind.config.js` file:
 
 ```javascript
 /** @type {import('tailwindcss').Config} */
@@ -32,9 +32,9 @@ module.exports = {
 }
 ```
 
-This configuration tells Tailwind to look for Elm files in the src and .elm-land directories, in addition to the usual file types.
+This configuration tells Tailwind to look for Elm files in the src and .elm-land directories and the usual file types.
 
-In addition to configuring Tailwind, you also need to insert index.css into the interop.js file. This can be done by adding the following line to the interop.js file. This way Vite knwo to transpile and bundle the css file:
+In addition to configuring Tailwind, you must insert index.css into the interop.js file. This can be done by adding the following line to the interop.js file. This way Vite knows to transpile and bundle the CSS file:
 
 ```javascript
 import './index.css';
